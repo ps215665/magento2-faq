@@ -12,8 +12,10 @@
             "email": "prakulsharma321@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.0"
+    },
     "autoload": {
         "files": [
             "registration.php"
@@ -28,3 +30,4 @@
         ]
     }
 }
+
