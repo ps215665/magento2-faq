@@ -1,5 +1,5 @@
 {
-    "name": "ps/module-faq",
+    "name": "mage-ps/faq",
     "description": "Faq Widget for Magento 2",
     "type": "magento2-module",
     "license": "open_source",
