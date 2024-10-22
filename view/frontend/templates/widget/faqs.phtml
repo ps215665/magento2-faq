@@ -1,0 +1,20 @@
+<?php if ($block->getFaqs()->count() > 0): ?>
+    <?php $faqs = $block->getFaqs(); ?>
+<div class="faq-widget">
+    <div id="accordion" data-mage-init='{
+            "accordion":{
+                "collapsible": true,
+                "openedState": "active",
+                "multipleCollapsible": false
+            }}'>
+        <?php foreach ($faqs as $faq): ?>
+            <div data-role="collapsible">
+                <div data-role="trigger">
+                    <h4><b><?= $escaper->escapeHtml($faq->getTitle()); ?></b></h4>
+                </div>
+            </div>
+            <div data-role="content" ><?= $escaper->escapeHtml($faq->getContent()); ?></div>    
+        <?php endforeach; ?>
+    </div>
+</div>
+<?php endif; ?>

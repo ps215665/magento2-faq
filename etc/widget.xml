@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="faq_widget" class="Ps\Faq\Block\Widget\Faq">
+        <label>FAQ Widget</label>
+        <description>Widget to display specific FAQs on the frontend.</description>
+        <parameters>
+             <parameter name="faq_ids"
+                xsi:type="multiselect"
+                visible="true"
+                source_model="Ps\Faq\Model\Config\Source\FaqList" 
+                sort_order="10" >
+               <label>Select Faq's</label>
+           </parameter>
+        </parameters>
+    </widget>
+</widgets>

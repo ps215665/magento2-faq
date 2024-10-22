@@ -1,0 +1,27 @@
+{
+    "name": "ps/module-faq",
+    "description": "Faq Widget for Magento 2",
+    "type": "magento2-module",
+    "license": "open_source",
+    "authors": [
+        {
+            "name": "Prakul Sharma",
+            "email": "prakulsharma321@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ps\\Faq\\": ""
+        }
+    },
+    "archive": {
+        "exclude": [
+            "assets/faq.gif"
+        ]
+    }
+}
