@@ -2,7 +2,10 @@
     "name": "mage-ps/faq",
     "description": "Faq Widget for Magento 2",
     "type": "magento2-module",
-    "license": "open_source",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "authors": [
         {
             "name": "Prakul Sharma",
