@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="faq_list" resource="default" engine="innodb" comment="ps_faq_faq Table">
+        <column xsi:type="int" 
+            name="faq_id" 
+            padding="10" 
+            unsigned="true" 
+            nullable="false"
+            identity="true"
+            comment="Faq Id"
+        />        
+        <column name="title" 
+            nullable="false"
+            xsi:type="varchar" 
+            length="255" 
+            comment="Title"
+        />
+        <column name="content" 
+            nullable="false" 
+            xsi:type="text" 
+            comment="Content"
+        />
+        <column name="status" 
+            nullable="false" 
+            xsi:type="boolean" 
+            comment="Status"
+        />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="faq_id"/>
+        </constraint>
+    </table>
+</schema>

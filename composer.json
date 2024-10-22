@@ -1,0 +1,33 @@
+{
+    "name": "mage-ps/faq",
+    "description": "Faq Widget for Magento 2",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Prakul Sharma",
+            "email": "prakulsharma321@gmail.com"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ps\\Faq\\": ""
+        }
+    },
+    "archive": {
+        "exclude": [
+            "assets/faq.gif"
+        ]
+    }
+}
+
